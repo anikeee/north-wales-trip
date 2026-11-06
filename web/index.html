@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Our North Wales trip plan, Friday 6 to Monday 9 November.">
+  <meta name="theme-color" content="#EDF2EE">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="North Wales">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>North Wales trip</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+  <link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="site">
+    <aside class="site-intro" aria-label="About this app">
+      <div class="brand"><img src="img/icons/favicon.svg" alt=""><span>Trip plan app</span></div>
+      <div>
+        <p class="intro-title">North Wales</p>
+        <p class="intro-sub">Friday 6 to Monday 9 November, three nights at The Cherries</p>
+      </div>
+      <div class="intro-rule"></div>
+      <p class="intro-text">The trip plan as an app. Each day’s stops with parking, food and toilets, halal food first. Food shops that tell you if they’re open right now, and 28 places to visit, closest first.</p>
+      <div class="btn-row" style="flex-wrap: wrap; align-items: center; max-width: 36rem">
+        <a class="btn btn-dark" style="flex: 0 0 auto" href="https://github.com/anikeee/north-wales-trip/releases/latest/download/north-wales-trip.apk">
+          <svg class="icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          Download the Android app
+        </a>
+        <span class="intro-note" style="flex: 1 1 auto">APK, about 4 MB</span>
+      </div>
+      <p class="intro-note">On Android, open the file and allow installs from your browser when asked. On iPhone, open this page in Safari, tap Share, then Add to Home Screen. Both work with no signal once opened.</p>
+      <div class="qr">
+        <img src="img/qr.svg" alt="QR code for anikeee.github.io/north-wales-trip" width="112" height="112">
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <b>Open it on your phone</b>
+          <span class="intro-note">Scan with the camera, or go to</span>
+          <b style="font-size: 14px">anikeee.github.io/north-wales-trip</b>
+        </div>
+      </div>
+      <ul class="features">
+        <li class="day-sat"><b>Now and next</b><span>Today shows where you are in the plan and the next stop.</span></li>
+        <li class="day-sun"><b>Tick as you go</b><span>Running late? Ticks move Today on at your pace.</span></li>
+        <li class="day-mon"><b>Open right now</b><span>Shops show if they are open, using UK time.</span></li>
+      </ul>
+    </aside>
+
+    <div class="app">
+      <main id="view" class="view" tabindex="-1" aria-live="off"></main>
+      <nav class="tabbar" aria-label="Main">
+        <a class="tab" href="#/today" data-tab="today">
+          <span class="tab-icon"><svg class="icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          Today
+        </a>
+        <a class="tab" href="#/plan" data-tab="plan">
+          <span class="tab-icon"><svg class="icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2.5v3M16 2.5v3"/></svg></span>
+          Plan
+        </a>
+        <a class="tab" href="#/places" data-tab="places">
+          <span class="tab-icon"><svg class="icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          Places
+        </a>
+        <a class="tab" href="#/shops" data-tab="shops">
+          <span class="tab-icon"><svg class="icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+          Shops
+        </a>
+        <a class="tab" href="#/info" data-tab="info">
+          <span class="tab-icon"><svg class="icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg></span>
+          Info
+        </a>
+      </nav>
+    </div>
+  </div>
+  <noscript><p style="padding: 20px">This plan needs JavaScript turned on.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

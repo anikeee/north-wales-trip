@@ -1,0 +1,13 @@
+{
+  "appId": "io.github.anikeee.northwales",
+  "appName": "North Wales",
+  "webDir": "web",
+  "android": {
+    "backgroundColor": "#EDF2EE"
+  },
+  "plugins": {
+    "SystemBars": {
+      "style": "LIGHT"
+    }
+  }
+}
